@@ -35,8 +35,8 @@ voidloop()
         Serial.print(i);                // Send the current degree via serial port
         Serial.print(",");              // Send an addittional char with the previos one, this is will be useful on Processinge Processing
         Serial.print(distance);         // Send the current distance via serial port
-        Serial.print(".");              // Addittional cha
-        if (distance < 20)              // Se a distancia é menor que 20cm o som será mais agudo em comparacao à se for maior que 20 e menor que 40
+        Serial.print(".");              // Addittional char
+        if (distance < 20)              
         {
             tone(8, 1000, 100); // High pitched tone
         }
